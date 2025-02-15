@@ -1,4 +1,4 @@
-import { Permissions } from '../enums/role.enum.js'; // Import Permissions
+import { Permissions } from '../enum/role.enum.js'; // Import Permissions
 
 // Define default permissions for each role
 export const RolePermissions = {

@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose"
-import { compareValue, hashValue } from "../utils/bcrypt";
+import { compareValue, hashValue } from "../utils/bcrypt.js";
 
 
 const userSchema = new Schema(
@@ -36,7 +36,7 @@ const userSchema = new Schema(
       default: null,
     },
     lastLogin: {
-      type: date,
+      type: Date,
       default: null,
     },
   },

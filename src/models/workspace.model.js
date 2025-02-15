@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { generatInvitecode } from "../utils/uuid";
+import { generatInvitecode } from "../utils/uuid.js";
 
 const workspaceSchema = new Schema({
   name: {
@@ -13,12 +13,12 @@ const workspaceSchema = new Schema({
     required : true
   },
   description: {
-    type: string,
+    type: String,
     trim: true,
     required: false
   },
   invitecode: {
-    type: string,
+    type: String,
     required: true,
     unique: true,
     default: generatInvitecode

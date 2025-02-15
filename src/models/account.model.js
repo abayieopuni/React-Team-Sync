@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose';
-import { ProviderEnum } from '../enums/account-provider.enum';
+import { ProviderEnum } from '../enum/account-provider.enum.js';
 
 const accountSchema = new Schema(
   {
@@ -11,7 +11,6 @@ const accountSchema = new Schema(
     provider: {
       type: String,
       enum: Object.values(ProviderEnum), 
-      required: true,
     },
     providerId: {
       type: String,
